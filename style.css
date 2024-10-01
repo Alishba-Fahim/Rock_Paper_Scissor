@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1 {
+    background-color: #4A90E2;
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice:hover {
+    opacity: 0.7; 
+    cursor: pointer;
+    background-color: #007ACC; 
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+
+#User-score,
+#Comp-score {
+    font-size: 4rem;
+    color: #007ACC; 
+}
+
+.msg-container {
+    margin-top: 5rem;
+}
+
+#msg {
+    font-size: 2rem;
+    background-color: #4A90E2; 
+    color: #fff;
+    display: inline;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+/* //============================================MEDIA QUERY===========================================================// */
+
+@media (max-width: 768px) {
+    .choices {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .choice {
+        height: 140px;
+        width: 140px;
+    }
+
+    img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .score-board {
+        gap: 2rem;
+        font-size: 1.5rem;
+    }
+
+    #User-score,
+    #Comp-score {
+        font-size: 3rem;
+    }
+
+    #msg {
+        font-size: 1.5rem;
+    }
+}
+
+/*=========================================== Media Query for Mobile============================================= */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+
+    .choice {
+        height: 100px;
+        width: 100px;
+    }
+
+    img {
+        height: 90px;
+        width: 90px;
+    }
+
+    .choices {
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+
+    .score-board {
+        font-size: 1rem;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    #User-score,
+    #Comp-score {
+        font-size: 2rem;
+    }
+
+    #msg {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+}
